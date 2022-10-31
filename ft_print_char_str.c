@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_str.c                                     :+:      :+:    :+:   */
+/*   ft_print_char_str.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcarva <marcarva@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 23:56:05 by marcarva          #+#    #+#             */
-/*   Updated: 2022/10/27 17:28:01 by marcarva         ###   ########.fr       */
+/*   Updated: 2022/10/31 11:14:38 by marcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int     ft_putchar(char c)
+int	ft_print_char(char c)
 {
-        write(1, &c, 1);
-        return (1);
+	write(1, &c, 1);
+	return (1);
 }
 
-int     ft_putstr(char *s)
+int	ft_print_str(char *s)
 {
-        int     i;
+	int	i;
 
-        i = 0;
-        if (!s)
-                ft_putstr("(null)");
-        while (*(s + i))
-        {
-                write(1, (s + i), 1);
-                i++;
-        }
-        return (i);
+	i = 0;
+	if (!s)
+		return (write(1, "(null)", 6));
+	else
+	{
+		while (*(s + i))
+		{
+			write(1, (s + i), 1);
+			i++;
+		}
+		return (i);
+	}
 }
