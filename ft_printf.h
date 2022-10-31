@@ -6,7 +6,7 @@
 /*   By: marcarva <marcarva@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 23:56:18 by marcarva          #+#    #+#             */
-/*   Updated: 2022/10/31 15:42:35 by marcarva         ###   ########.fr       */
+/*   Updated: 2022/10/31 16:34:20 by marcella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int		ft_count_size(int n);
 int		ft_print_unsigned(unsigned int n);
 int		ft_print_hexa(unsigned int nbr, char letter);
 int		ft_print_pointer(void *ptr);
-int     ft_print_hexa_long(unsigned long long hexa);
+int		ft_print_hexa_long(unsigned long long hexa);
+
 #endif
