@@ -6,7 +6,7 @@
 /*   By: marcarva <marcarva@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:21:30 by marcarva          #+#    #+#             */
-/*   Updated: 2022/10/31 15:36:31 by marcarva         ###   ########.fr       */
+/*   Updated: 2022/11/07 12:21:17 by marcarva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 int	ft_print_pointer(void *ptr)
 {
 	int					printed;
-	unsigned long long 	address;
+	unsigned long long	address;
 
-	address = (unsigned long long)ptr;	
+	address = (unsigned long long)ptr;
 	printed = 0;
 	if (!ptr)
 		return (write(1, "(nil)", 5));
